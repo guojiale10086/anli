@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/xiangqing.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+	</head>
+	<body>
+		<div id="box">
+			<div class="top">
+				<ul>
+					<li onclick="fun()"><a href="index.html"></a><img src="img/youjiantou.png"></li>
+					<li>商品详情</li>
+				</ul>
+			</div>
+			<div class="swiper-container">
+			   <div class="swiper-wrapper">
+			     <div class="swiper-slide"><img src="img/500870919.png" ></div>
+			     <div class="swiper-slide"><img src="img/500870919.png" ></div>
+			     <div class="swiper-slide"><img src="img/500870919.png" ></div>
+			   </div>
+			   <!-- Add Pagination -->
+			   <div class="swiper-pagination"></div>
+			 </div>
+			 <div class="zhong">
+			 	<ul>
+					<li>正宗山东烟台红富士、红富士、嘎啦、桑萨、红</li>
+					<li>将军、金冠</li>
+				</ul>
+				<ul>
+					<li>￥66.00 <s>￥120.00</s><img src="img/tuc-2.png" ></li>
+					<li>红富士是从普通富士的芽(枝)变中选育出的着色系富士的统称。</li>
+					<li>富士苹果是日本农林水产省果树试验场胜场分产于</li>
+				</ul>
+			 </div>
+			 <div class="di">
+				 <ul>
+					 <li><img src="img/kefu.png" ></li>
+					 <li>客服</li>
+				 </ul>
+				 <ul>
+					 <li><img src="img/gwc.png" ></li>
+					 <li><a href="gwc.html">购物车</a></li>
+				 </ul>
+				 <ul>
+					 <li><a href="gwc.html" style="color: white;">加入购物车</a></li>
+					 <li>立即购买</li>
+				 </ul>
+			 </div>
+		</div>
+	</body>
+	<script src="js/rem.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script>
+	   var swiper = new Swiper('.swiper-container', {
+				loop:true,
+				autoplay:true,
+	     // spaceBetween: 30,
+	     pagination: {
+	       el: '.swiper-pagination',
+	       clickable: true,
+	     },
+	   });
+	   function fun(){
+	 		history.back(-1);
+	 	}
+	 </script>
+</html>

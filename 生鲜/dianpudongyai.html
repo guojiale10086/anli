@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/dianpudongtai.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<div class="top">
+				<div class="nav">
+					<a href="sjs.html"><img src="imgs/zuo-2.png" ></a>
+					<p><img src="img/sousuo.png" ></p>
+					<input type="text" name="" id="" value="" placeholder="搜索商品"/>
+					<ul>
+						<li>...</li>
+						<li>5</li>
+					</ul>
+				</div>
+				<div class="bq">
+					<ul>
+						<li><img src="img/500712982.png" ></li>
+					</ul>
+					<ul>
+						<li>千图网生鲜水果店</li>
+						<li><span>官方自营</span>2.6万人关注</li>
+					</ul>
+					<ul>
+						<li>+ 关注</li>
+					</ul>
+				</div>
+				<div class="aside">
+					<ul>
+						<li><a href="sjs.html"style="color: white;">首页</a></li>
+						<li><a href="linquan.html"style="color: white;">促销</a></li>
+						<li>上新</li>
+						<li>动态</li>
+					</ul>
+				</div>
+			</div>
+			<div class="cont">
+				<p>11月20日 17:00</p>
+				<ul id="quan">
+					<li><span>#优选水果#</span>刚拿到，橙子看着不错哦，买家秀来一波，一直都非常喜欢吃橙子，橙子的清香，可以提神，做鲜榨果汁，橙子可是百搭的...
+					<span id="dian">全文</span>
+					</li>
+					<li><span>#优选水果#</span>刚拿到，橙子看着不错哦，买家秀来一波，一直都非常喜欢吃橙子，橙子的清香，可以提神，做鲜榨果汁，橙子可是百搭的...
+					<span id="dian2">收起</span></li>
+				</ul>
+				<p><img src="img/juxing8.png" ></p>
+				<div class="xia">
+					<ul>
+						<li><img src="img/lianjie.png" >转发</li>
+						<li><img src="img/xiaoxi1.png" >952</li>
+						<li><img src="img/guanzu.png" >498</li>
+					</ul>
+				</div>
+			</div>
+			<div class="di">
+			 	<ul>
+					<li><img src="img/ll.png" style="margin-right: 0.2rem;"><a href="fenlei.html">商品分类</a></li>
+					<li><a href="dianpuxinxi.html">店铺详情</a></li>
+					<li><img src="img/lianxi.png" >
+					<br>联系客服</li>
+				</ul>
+			 </div>
+		</div>
+	</body>
+	<script src="js2/rem.js"></script>
+	<script src="js/zepto.js"></script>
+	<script type="text/javascript">
+		Zepto(function(){
+			$("#dian").click(function(){
+				$("#quan>li").eq(1).show();
+				$("#dian").hide();
+			})
+			$("#dian2").click(function(){
+				$("#quan>li").eq(1).hide();
+				$("#dian").show();
+			})
+		})
+	</script>
+</html>
